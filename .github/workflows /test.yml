@@ -9,6 +9,6 @@ jobs:
   grade-learner:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Event Name
+      - name: Display Event Name
         run: echo "Triggered Event: ${{ github.event_name }}"
     
