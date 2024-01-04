@@ -1,0 +1,14 @@
+name: Testing Workflow
+
+on:
+  registry_package:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  grade-learner:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Event Name
+        run: echo "Triggered Event: ${{ github.event_name }}"
+    
